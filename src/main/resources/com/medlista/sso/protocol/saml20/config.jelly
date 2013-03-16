@@ -1,0 +1,24 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:block>
+    <table>
+      <f:description>SAML 2.0 </f:description>
+    </table>
+  </f:block>
+  
+  <f:advanced>
+    <f:entry title="Post back URL" field="postBackURl">
+      <f:textbox default="" />
+    </f:entry>
+    <f:entry title="Entity Id " field="entityId">
+      <f:textbox default="" />
+    </f:entry>
+    <f:entry title="Certificate" field="certificate">
+      <f:textbox default="" />
+    </f:entry>
+    
+    <f:entry title="${%tolerance}" field="tolerance">
+      <f:textbox default="5000" />
+    </f:entry>
+  </f:advanced>
+</j:jelly>
